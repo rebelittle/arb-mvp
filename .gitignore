@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Node
+node_modules/
+dist/
+
+# Env
+.env
+
+# Scrapling session files (contain auth cookies — never commit)
+backend/sessions/
+
+# OS
+.DS_Store
+Thumbs.db
