@@ -4,7 +4,10 @@ const API_BASE = import.meta.env.VITE_API_BASE_URL ?? "http://localhost:8000/api
 const API_KEY = import.meta.env.VITE_API_KEY ?? "";
 
 function authHeaders(): HeadersInit {
-  return API_KEY ? { "X-API-Key": API_KEY } : {};
+  return {
+    ...(API_KEY ? { "X-API-Key": API_KEY } : {}),
+    "ngrok-skip-browser-warning": "true",
+  };
 }
 
 export async function fetchOpportunities(totalStake: number): Promise<OpportunityResponse> {
