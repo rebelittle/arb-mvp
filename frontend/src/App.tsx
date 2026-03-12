@@ -74,7 +74,7 @@ export default function App() {
     <main className="page">
       <header>
         <h1>Arb Scanner</h1>
-        <p>Live moneyline arbitrage across DraftKings · FanDuel · BetRivers · betPARX</p>
+        <p>Live moneyline arbitrage across DraftKings · FanDuel · BetRivers · BetMGM</p>
       </header>
 
       <BookStatusPanel books={bookStatus} />
